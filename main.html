@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofoliu Personal - David Rusu</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: background-color 0.5s ease-in-out;
+        }
+        header {
+            background: linear-gradient(90deg, #333, #555);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;
+        }
+        .proiect {
+            background: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transform: scale(0.9);
+            transition: transform 0.3s ease-in-out;
+        }
+        .proiect:hover {
+            transform: scale(1.02);
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>David Rusu</h1>
+        <p>Viitor Developer Web</p>
+        <img src="./images/david.jpg" alt="David Rusu" class="profile-image">
+        <nav>
+            <ul>
+                <li><a href="#despre">Despre</a></li>
+                <li><a href="#proiecte">Proiecte</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="despre">
+        <h2>Despre Mine</h2>
+        <p>Sunt pasionat de dezvoltarea web și învăț HTML, CSS și JavaScript.</p>
+    </section>
+    
+    <section id="proiecte">
+        <h2>Proiectele Mele</h2>
+        <div class="proiect">
+            <h3>Exemplu Proiect</h3>
+            <p>Descriere scurtă a proiectului.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>📞 Telefon: <a href="tel:+393478593182">+393478593182</a></p>
+        <p>📧 Email: <a href="mailto:david.rusu@mail.ru">david.rusu@mail.ru</a></p>
+        <p>🌐 GitHub: <a href="#">GitHub</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 David Rusu - Toate drepturile rezervate.</p>
+    </footer>
+</body>
+</html>
