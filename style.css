@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aliniere la partea de sus */
+    min-height: 100%; /* Permite să se întindă pe toată înălțimea ecranului */
+    overflow-x: hidden; /* Ascunde bara de scroll orizontală */
+}
+
+.portfolio {
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px; /* Adaugă spațiu între marginea superioară și pagină */
+    animation: fadeIn 1.5s ease-out;
+    overflow-y: auto; /* Permite scroll vertical în interiorul containerului */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header {
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4CAF50;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}
+
+.projects {
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrare imagine și text */
+}
+
+.project-img {
+    width: 100%; /* Imaginea va ocupa toată lățimea cardului */
+    max-width: 300px; /* Poți seta o lățime maximă pentru imagine */
+    height: auto; /* Păstrează proporțiile imaginii */
+    border-radius: 8px; /* Margini rotunjite pentru imagine */
+    margin-bottom: 15px; /* Spațiu între imagine și text */
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.contact-form {
+    margin-top: 30px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+section {
+    margin-bottom: 30px; /* Asigură un spațiu consistent între secțiuni */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+    padding-bottom: 20px; /* Asigură că footer-ul are un pic de margine */
+}
+
+@media (max-width: 768px) {
+    .portfolio {
+        width: 90%; /* Fă portofoliul să fie mai mic pe ecrane mici */
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-form input, .contact-form textarea {
+        padding: 8px;
+    }
+
+    .contact-form button {
+        padding: 8px;
+    }
+}

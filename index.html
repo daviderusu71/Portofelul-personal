@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofoliu Personal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="portfolio">
+        <header class="header">
+            <img src="./images/david.jpg" alt="Imagine Profil" class="profile-img">
+            <h1>David Rusu</h1>
+            <p>Developer Web</p>
+        </header>
+
+        <section class="contact-info">
+            <h2>Informații Contact</h2>
+            <ul>
+                <li><strong>Telefon:</strong> +393478593182</li>
+                <li><strong>Email:</strong> <a href="mailto:david.rusu@mail.ru">david.rusu@mail.ru</a></li>
+                <li><strong>Website:</strong> <a href="https://www.exemplu.com" target="_blank">www.exemplu.com</a></li>
+            </ul>
+        </section>
+
+        <section class="social-media">
+            <h2>Urmărește-mă</h2>
+            <ul>
+                <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+            </ul>
+        </section>
+
+        <!-- Secțiunea de Proiecte -->
+        <section class="projects">
+            <h2>Proiecte</h2>
+            <img src="./images/laptop-wooden-table.jpg" alt="Imagine Proiect 1" class="project-img">
+            <div class="project-card" alt="Proiect 1">
+                <h3>Proiect 1</h3>
+                <p>Descriere scurtă a proiectului 1. Aici poți adăuga linkuri sau imagini din proiect.</p>
+            </div>
+            <div class="project-card">
+                <h3>Proiect 2</h3>
+                <img src="./images/close-up-hands-typing-desk.jpg" width="150" height="150" alt="Imagine Proiect 1" class="project-img">
+                <p>Descriere scurtă a proiectului 2. Aici poți adăuga linkuri sau imagini din proiect.</p>
+            </div>
+        </section>
+
+        <!-- Formularul de Contact -->
+        <section class="contact-form">
+            <h2>Contactează-mă</h2>
+            <form action="mailto:email@example.com" method="POST" enctype="text/plain">
+                <label for="name">Nume:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mesaj:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Trimite</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 David Rusu</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
